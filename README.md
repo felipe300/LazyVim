@@ -10,3 +10,17 @@ A Basic nvim setup with [LazyVim](https://github.com/LazyVim/LazyVim) as a start
 - Lualine
 - Telescope
 - etc
+
+## Languages
+
+- Javascript
+- Typescript
+- React
+- Nextjs
+- Prisma
+- Astro
+- HTML
+- CSS
+- TailwindCSS
+- Lua
+- Json
