@@ -8,6 +8,8 @@ return {
     styles = {
       sidebars = "transparent",
       floats = "transparent",
+      comments = { italic = true },
+      keywords = { italic = true },
     },
     sidebars = { "qf", "help" },
   },

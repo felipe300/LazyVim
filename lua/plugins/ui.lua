@@ -20,6 +20,10 @@ return {
       timeout = 3000,
     },
   },
+  {
+    "nvim-lualine/lualine.nvim",
+    enabled = false,
+  },
   -- statusline
   -- {
   --   "nvim-lualine/lualine.nvim",
