@@ -23,7 +23,7 @@ return {
     },
     templates = {
       subdir = "Templates",
-      date_format = "%Y-%m-%d-%a",
+      date_format = "%Y-%m-%d",
       time_format = "%H:%M",
     },
     ui = {
