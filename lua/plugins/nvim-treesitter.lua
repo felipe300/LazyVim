@@ -4,16 +4,17 @@ return {
     "nvim-treesitter/nvim-treesitter",
     event = { "BufReadPre", "BufNewFile" },
     build = ":TSUpdate",
-    dependencies = {
-      "windwp/nvim-ts-autotag",
-    },
+    dependencies = { "windwp/nvim-ts-autotag" },
     config = function()
       local treesitter = require("nvim-treesitter.configs")
 
       treesitter.setup({
-        highlight = { enable = true },
         indent = { enable = true },
         autotag = { enable = true },
+        highlight = {
+          enable = true,
+          additional_vim_regex_highlight = { "markdown" },
+        },
         ensure_installed = {
           "astro",
           "bash",

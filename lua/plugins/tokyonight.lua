@@ -1,19 +1,25 @@
+function ColorMyPencils(color)
+  color = color or "tokyonight"
+  vim.cmd.colorscheme(color)
+
+  vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+  vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+end
+
 return {
   "folke/tokyonight.nvim",
-  lazy = true,
-  priority = 1000,
-  opts = {
-    style = "storm",
-    transparent = true,
-    styles = {
-      sidebars = "transparent",
-      floats = "transparent",
-      comments = { italic = true },
-      keywords = { italic = true },
-    },
-    sidebars = { "qf", "help" },
-  },
-  require("notify").setup({
-    background_colour = "#000000",
-  }),
+  config = function()
+    require("tokyonight").setup({
+      style = "storm",
+      transparent = true,
+      terminal_colors = true,
+      styles = {
+        sidebars = "transparent",
+        floats = "transparent",
+        comments = { italic = false },
+        keywords = { italic = false },
+      },
+    })
+    ColorMyPencils()
+  end,
 }
