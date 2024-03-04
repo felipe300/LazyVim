@@ -1,21 +1,4 @@
 return {
-  {
-    -- Incremental rename
-    "smjonas/inc-rename.nvim",
-    cmd = "IncRename",
-    keys = {
-      {
-        "<leader>rn",
-        function()
-          return ":IncRename " .. vim.fn.expand("<cword>")
-        end,
-        desc = "Incremental rename",
-        noremap = true,
-        expr = true,
-      },
-    },
-    config = true,
-  },
   -- Refactoring tool
   {
     "ThePrimeagen/refactoring.nvim",
