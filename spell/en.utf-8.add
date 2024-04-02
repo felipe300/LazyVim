@@ -24,3 +24,4 @@ multiline
 args
 CMD
 cmd
+readonly

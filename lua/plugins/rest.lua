@@ -15,7 +15,8 @@ return {
       -- Highlight request on run
       highlight = {
         enabled = true,
-        timeout = 150,
+        timeout = 1500,
+        -- timeout = 150,
       },
       result = {
         -- toggle showing URL, HTTP info, headers at top the of result window
