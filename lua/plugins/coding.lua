@@ -59,8 +59,8 @@ return {
           end,
         },
         mapping = cmp.mapping.preset.insert({
-          ["<C-n>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
-          ["<C-p>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
+          ["<C-j>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
+          ["<C-k>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
           ["<C-b>"] = cmp.mapping.scroll_docs(-4),
           ["<C-f>"] = cmp.mapping.scroll_docs(4),
           ["<C-Space>"] = cmp.mapping.complete(),
@@ -142,13 +142,6 @@ return {
     end,
   },
 
-  -- auto pairs
-  {
-    "echasnovski/mini.pairs",
-    event = "VeryLazy",
-    opts = {},
-  },
-
   -- Fast and feature-rich surround actions. For text that includes
   -- surrounding characters like brackets or quotes, this allows you
   -- to select the text inside, change or modify the surrounding characters,
@@ -186,7 +179,7 @@ return {
     },
   },
 
-  -- comments
+  -- Comments
   { "JoosepAlviste/nvim-ts-context-commentstring", lazy = true },
   {
     "echasnovski/mini.comment",

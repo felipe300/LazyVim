@@ -24,14 +24,4 @@ return {
     "nvim-lualine/lualine.nvim",
     enabled = false,
   },
-  -- statusline
-  -- {
-  --   "nvim-lualine/lualine.nvim",
-  --   event = "VeryLazy",
-  --   opts = {
-  --     options = {
-  --       theme = "tokyonight",
-  --     },
-  --   },
-  -- },
 }
