@@ -8,14 +8,12 @@ Treesitter
 Lualine
 Astro
 github
-Nextjs
 Javascript
 Lua
 Json
 Prisma
 dotfiles
 Zellij
-zellij
 zod
 charset
 charsets
@@ -26,3 +24,7 @@ CMD
 cmd
 readonly
 Enums
+falsy
+truthy
+backend
+frontend
