@@ -23,3 +23,11 @@ key.set("n", "<leader>sx", require("telescope.builtin").resume, { noremap = true
 
 -- oil.lua
 key.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+
+-- nvim-tmux-navigator
+if os.getenv("TMUX") then
+  vim.keymap.set("n", "<C-h>", "<cmd>TmuxNavigateLeft<cr>")
+  vim.keymap.set("n", "<C-j>", "<cmd>TmuxNavigateDown<cr>")
+  vim.keymap.set("n", "<C-k>", "<cmd>TmuxNavigateUp<cr>")
+  vim.keymap.set("n", "<C-l>", "<cmd>TmuxNavigateRight<cr>")
+end
